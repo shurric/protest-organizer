@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Protest Organizer</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="main-container">
+    <!-- <div class="sidebar">
+      <div class="search">
+        <input type="text" class="search-input">
+        <div class="search-button"><span class="v-helper"></span><img src="images/search.svg"></div>
+      </div>
+      <div class="results">
+        <div class="result">
+          <div class="e-name"><span class="res-num">1</span>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="res-info"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="res-info"><i class="material-icons">person</i>45 Registered</div>
+          <div class="res-info"><i class="material-icons">contact_phone</i>Organizer: Jane Doe</div>
+        </div>
+        <div class="result">
+          <div class="e-name"><span class="res-num">2</span>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="res-info"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="res-info"><i class="material-icons">person</i>45 Registered</div>
+          <div class="res-info"><i class="material-icons">contact_phone</i>Organizer: Jane Doe</div>
+        </div>
+        <div class="result">
+          <div class="e-name"><span class="res-num">3</span>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="res-info"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="res-info"><i class="material-icons">person</i>45 Registered</div>
+          <div class="res-info"><i class="material-icons">contact_phone</i>Organizer: Jane Doe</div>
+        </div>
+        <div class="result">
+          <div class="e-name"><span class="res-num">4</span>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="res-info"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="res-info"><i class="material-icons">person</i>45 Registered</div>
+          <div class="res-info"><i class="material-icons">contact_phone</i>Organizer: Jane Doe</div>
+        </div>
+        <div class="result">
+          <div class="e-name"><span class="res-num">5</span>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="res-info"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="res-info"><i class="material-icons">person</i>45 Registered</div>
+          <div class="res-info"><i class="material-icons">contact_phone</i>Organizer: Jane Doe</div>
+        </div>
+        <div class="result">
+          <div class="e-name"><span class="res-num">6</span>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="res-info"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="res-info"><i class="material-icons">person</i>45 Registered</div>
+          <div class="res-info"><i class="material-icons">contact_phone</i>Organizer: Jane Doe</div>
+        </div>
+      </div>
+    </div> -->
+    <div class="sidebar">
+      <div class="header">
+        <h1>Protest Name</h1>
+      </div>
+      <div class="desc-info">
+          <div class="detail"><i class="material-icons">location_on</i>P. Sherman, 42 Wallaby Way, Sidney, Australia 1234567</div>
+          <div class="detail"><i class="material-icons">access_time</i>10:00 am, 20 April 2018</div>
+          <div class="detail"><i class="material-icons">person</i>45 Registered</div>
+          <div class="detail"><i class="material-icons">contact_phone</i>Organizer:<br />
+            Jane Doe<br />
+            800-800-8000<br/>
+            jane@doe.net
+          </div>
+          <div class="detail"><i class="material-icons">description</i>Description:
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget mauris nibh. Quisque at est varius eros suscipit egestas ut vel ligula. Donec dictum diam eget lacus efficitur ornare quis ut risus. Nullam gravida ullamcorper ipsum, vel gravida nulla pharetra sed. In magna purus, dignissim eu turpis convallis, accumsan tincidunt lectus. Vestibulum rhoncus ultrices ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p>Duis vestibulum vestibulum lorem, vitae iaculis lacus consequat vel. Curabitur euismod mauris sapien, sed bibendum ligula sodales non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse lobortis condimentum massa, non tincidunt lacus pulvinar non. Nunc tempor elit id luctus lacinia. Quisque et ipsum ac massa efficitur varius. Mauris vel ultricies quam. </p>
+          </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <div class="overlay">
+    <div class="search-container hidden">
+      <div class="search">
+        <input type="text" class="search-input">
+        <div class="search-button"><span class="v-helper"></span><img src="images/search.svg"></div>
+      </div>
+    </div>
+    <a class="signin-bt button button-primary">Sign In</a>
+  </div>
+  <script src="js/index.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=REDACTED&callback=initMap"></script>
+</body>
+</html>
